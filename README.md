@@ -2,6 +2,5 @@
 
 Github workflow:
 
-#Create repository online
-#Use cookiecutter: cookiecutter gh:mkrapp/cookiecutter-reproducible-science
-#Create .gitignore
+-Create repository online
+-Use cookiecutter: cookiecutter gh:mkrapp/cookiecutter-reproducible-science-#Create .gitignore
