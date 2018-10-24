@@ -1,0 +1,11 @@
+sample-id,absolute-filepath,direction
+16207776,$PWD/../../data/raw/801316207776_S108_L001_R1_001.fastq.gz,forward
+16207776,$PWD/../../data/raw/801316207776_S108_L001_R2_001.fastq.gz,reverse
+16207802,$PWD/../../data/raw/801316207802_S95_L001_R1_001.fastq.gz,forward
+16207802,$PWD/../../data/raw/801316207802_S95_L001_R2_001.fastq.gz,reverse
+16207803,$PWD/../../data/raw/801316207803_S105_L001_R1_001.fastq.gz,forward
+16207803,$PWD/../../data/raw/801316207803_S105_L001_R2_001.fastq.gz,reverse
+16207806,$PWD/../../data/raw/801316207806_S86_L001_R1_001.fastq.gz,forward
+16207806,$PWD/../../data/raw/801316207806_S86_L001_R2_001.fastq.gz,reverse
+16211354,$PWD/../../data/raw/801316211354_S106_L001_R1_001.fastq.gz,forward
+16211354,$PWD/../../data/raw/801316211354_S106_L001_R2_001.fastq.gz,reverse
