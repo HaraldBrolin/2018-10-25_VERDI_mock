@@ -1,8 +1,8 @@
 # Do not track all of the folders.
-bin/
+/bin
 /data
-docs/
-reports/*
+/docs
+/reports
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
