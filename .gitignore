@@ -1,3 +1,9 @@
+# Do not track all of the folders.
+bin/
+data/
+docs/
+reports/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
