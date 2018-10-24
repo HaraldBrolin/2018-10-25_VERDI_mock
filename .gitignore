@@ -3,6 +3,7 @@
 /data
 /docs
 /reports
+/src/data/r-scripts/packrat/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
