@@ -109,3 +109,4 @@ bin/
 
 # exclude external models from source control
 /src/external/
+.Rproj.user

@@ -22,16 +22,16 @@ direction <- function(x){
 names_df <- create_data_frame("(^[0-9]{4})")
 names_df$sample_id <- sapply(names_df$sample_id, substr, 5, 12)
 
-verdi_df <- create_data_frame("(verdi)")
-verdi_df$sample_id <- sapply(strsplit(verdi_df$sample_id, "_"), "[", 1)
+# verdi_df <- create_data_frame("(verdi)")
+# verdi_df$sample_id <- sapply(strsplit(verdi_df$sample_id, "_"), "[", 1)
 
 mock_df <- create_data_frame("(Mock)")
 mock_df$sample_id <- sapply(strsplit(mock_df$sample_id, "-"), "[", 1)
 
-undetermined_df <- create_data_frame("(Undetermined)")
-undetermined_df$sample_id <- sapply(strsplit(undetermined_df$sample_id, "_"), "[", 1)
+# undetermined_df <- create_data_frame("(Undetermined)")
+# undetermined_df$sample_id <- sapply(strsplit(undetermined_df$sample_id, "_"), "[", 1)
 
-samples_df <- rbind(names_df, verdi_df, mock_df, undetermined_df)
+samples_df <- rbind(names_df, mock_df)
 
 names(samples_df) <- NULL
 print.data.frame(samples_df, row.names = FALSE)
