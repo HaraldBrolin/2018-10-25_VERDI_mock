@@ -1,6 +1,6 @@
 # Do not track all of the folders.
 bin/
-data/
+/data
 docs/
 reports/*
 
