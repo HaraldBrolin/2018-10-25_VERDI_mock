@@ -2,7 +2,7 @@
 bin/
 data/
 docs/
-reports/
+reports/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
