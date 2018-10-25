@@ -7,22 +7,22 @@
 # 16S data.
 
 # version: Qiime2 v.2018.8
-TESETA
+
 
 configfile: "verdi_config.yaml"
 
 rule all:
     input:
-        "../../data/visualizations/taxonomy/feature_confidence.qzv",
-        "../../data/visualizations/taxonomy/taxa_bar_plot.qzv"
+        "../../../data/visualizations/taxonomy/feature_confidence.qzv",
+        "../../../data/visualizations/taxonomy/taxa_bar_plot.qzv"
 
 
 rule classify_sklearn:
     input:
-        representative_seqs = "../../data/interim/artifacts/dada2/representative_sequences.qza",
+        representative_seqs = "../../../data/interim/artifacts/dada2/representative_sequences.qza",
         classifier = config['classifier_path']
     output:
-        classification = "../../data/interim/artifacts/classification/taxonomy.qza",
+        classification = "../../../data/interim/artifacts/classification/taxonomy.qza",
     run:
         shell(
             "qiime feature-classifier classify-sklearn"
@@ -35,7 +35,7 @@ rule feature_classification_confidence:
     input:
         taxonomy = rules.classify_sklearn.output.classification
     output:
-        read_stats = "../../data/visualizations/taxonomy/feature_confidence.qzv"
+        read_stats = "../../../data/visualizations/taxonomy/feature_confidence.qzv"
     run:
         shell(
             "qiime metadata tabulate"
@@ -44,15 +44,15 @@ rule feature_classification_confidence:
 
 rule bar_plot:
     input:
-        table = "../../data/interim/artifacts/dada2/table.qza",
+        table = "../../../data/interim/artifacts/dada2/table.qza",
         taxonomy = rules.classify_sklearn.output.classification,
-        meta_data = "../../src/data/meta_data_test.txt"
+        metadata = config["metadata"]
     output:
-        bar_plot = "../../data/visualizations/taxonomy/taxa_bar_plot.qzv"
+        bar_plot = "../../../data/visualizations/taxonomy/taxa_bar_plot.qzv"
     run:
         shell(
             "qiime taxa barplot"
             " --i-table {input.table}"
             " --i-taxonomy {input.taxonomy}"
-            " --m-metadata-file {input.meta_data}"
+            " --m-metadata-file {input.metadata}"
             " --o-visualization {output.bar_plot}")
