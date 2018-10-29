@@ -5,6 +5,9 @@
 /reports
 /src/data/r-scripts/packrat/*
 
+# r files
+*.Rhistory
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

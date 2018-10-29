@@ -33,7 +33,7 @@ rule all:
 
 rule paired_end_import:
     input:
-        "manifest_mock"
+        "../../../data/metadata/manifest_mock"
     output:
         "../../../data/interim/artifacts/paired_end_demux.qza"
     run:
