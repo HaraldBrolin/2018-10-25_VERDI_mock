@@ -8,6 +8,9 @@
 # r files
 *.Rhistory
 
+#Snakemake 
+*.snakemake
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
