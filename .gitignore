@@ -9,7 +9,7 @@
 *.Rhistory
 
 #Snakemake 
-**.snakemake/
+**/.snakemake/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
