@@ -11,7 +11,7 @@
 #  General settings  #
 ######################
 project_name: "2018-10-15_verdi_"
-threads: 5
+threads: 24
 metadata: "../../../data/metadata/metadata.tsv"
 ######################
 #  DADA2 settings  #
@@ -35,7 +35,7 @@ metadata: "../../../data/metadata/metadata.tsv"
 # The same settings exist for reverse reads, trunc-len-r and trim-left-r
 
 trunc-len-f: 248
-trunc-len-r: 149
+trunc-len-r: 60
 
 trim-left-f: 0
 trim-left-r: 0
@@ -59,4 +59,4 @@ steps: 40
 #  Classifier settings  #
 ########################
 
-classifier_path: "../../../data/external/classifier/gg-13-8-99-515-806-nb-classifier.qza"
+classifier_path: "../../../data/external/gg-13-8-99-515-806-nb-classifier.qza"

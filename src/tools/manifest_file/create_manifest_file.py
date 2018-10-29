@@ -19,11 +19,11 @@ for file in sample_files:
         direction = "forward"
     else:
         direction = "reverse"
-    print(file[4:12] + "," + file + "," + direction)
+    print(file[4:12] + "," + "$PWD/../../../data/raw/" + file + "," + direction)
 
 for file in mock_files:
     if re.search("_R1_", file):
         direction = "forward"
     else:
         direction = "reverse"
-    print(file[0:4] + "," + file + "," + direction)
+    print(file[0:4] + "," + "$PWD/../../../data/raw/" + file + "," + direction)
